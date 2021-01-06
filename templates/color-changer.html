@@ -2,16 +2,21 @@
 <html>
     <title>Picture Submitor</title>
     <header>Picture Submitor
+        <script
+        src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous"></script>
     </header>
     <body>
-        <form>
+        <!-- change method to get to return uploaded picture and then swtich to post to grey it -->
+        <form action='/greyed' method="GET">
             <label for="picture">Choose a picture:</label>
             <input type="file" id="picture" accept="image/png, image/jpeg"><br>
-            <button type="submit" id="btn">submit</button>
+            <button type="submit" id="btn">Upload File</button>
         </form>
-
+        
         <img id="new-pic"></img>
     </body>
-
+    
     <script src="/static/color-changer.js"></script>
 </html>
